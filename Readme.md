@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Юлия Гуткина](https://up.htmlacademy.ru/adaptive/6/user/128700).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Карпов] (https://htmlacademy.ru/profile/id70583).
 
 ---
 
