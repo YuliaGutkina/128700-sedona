@@ -3,16 +3,17 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Седона</title>
+		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
 		<header class="page-header">
 			<nav class="main-nav">
 				<ul class="main-nav__list">
-					<li class="main-nav__item  main-nav__item--active">
+					<li class="main-nav__item">
 						<a href="index.html">главная</a>
 					</li>
-					<li class="main-nav__item">
-						<span>фото и видео</span>
+					<li class="main-nav__item  main-nav__item--active">
+						<a>фото и видео</a>
 					</li>
 					<li class="main-nav__item">
 						<a href="form.html">форма отзыва</a>
@@ -30,54 +31,60 @@
 		</header>
 		<main>
 			<section class="intro">
-				<div class="intro__photo intro__photo--inner-page">
-					<img src="http://placehold.it/229x39" alt="" class="intro__img-text">
+				<div class="intro__photo">
+					<img src="http://placehold.it/229x39" alt="" class="intro__img">
 				</div>
-				<div class="intro__text-content  text-content">
-					<h2 class="text-content__title">
+				<div class="intro__content">
+					<h1 class="intro__title">
 						Фото и видео
-					</h2>
-					<p class="text-content__text">
+					</h1>
+					<p class="intro__text">
 						Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
 					</p>
 				</div>
 			</section>
-			<section class="photos">
+			<section class="photo-list">
 				<article class="photo">
 					<img src="http://placehold.it/280x280" alt="">
-					<footer class="photo__info">
-						<h3 class="photo__title">Местная растительность</h3>
-						<span class="photo__author">Автор фото:</span>
-						<a href="" class="photo__author-name">Сергей</a>
-						<div class="photo__likes">
+					<section class="photo__info"> 
+						<h4 class="photo__title">Местная растительность</h4>
+						<p class="photo__author">
+							Автор фото:  
+							<a href="" class="photo__author-name">Сергей</a>
+						</p>
+						<footer class="photo__likes"> 
 							<a href="" class="photo__like-it"></a>
 							<span class="photo__likes-count">143</span>
-						</div>
-					</footer>
+						</footer>
+					</section>
 				</article>
 				<article class="photo">
 					<img src="http://placehold.it/280x280" alt="">
-					<footer class="photo__info">
-						<h3 class="photo__title">Дорога на север</h3>
-						<span class="photo__author">Автор фото:</span>
-						<a href="" class="photo__author-name">Петр</a>
-						<div class="photo__likes">
+					<section class="photo__info">
+						<h4 class="photo__title">Дорога на север</h4>
+						<p class="photo__author">
+							Автор фото:  
+							<a href="" class="photo__author-name">Петр</a>
+						</p>
+						<footer class="photo__likes">
 							<a href="" class="photo__like-it"></a>
 							<span class="photo__likes-count">96</span>
-						</div>
-					</footer>
+						</footer>
+					</section>
 				</article>
 				<article class="photo">
 					<img src="http://placehold.it/280x280" alt="">
-					<footer class="photo__info">
-						<h3 class="photo__title">Мост дьявола</h3>
-						<span class="photo__author">Автор фото:</span>
-						<a href="" class="photo__author-name">Антон</a>
-						<div class="photo__likes">
+					<section class="photo__info">
+						<h4 class="photo__title">Мост дьявола</h4>
+						<p class="photo__author">
+							Автор фото:  
+							<a href="" class="photo__author-name">Антон</a>
+						</p>
+						<footer class="photo__likes">
 							<a href="" class="photo__like-it"></a>
 							<span class="photo__likes-count">254</span>
-						</div>
-					</footer>
+						</footer>
+					</section>
 				</article>
 			</section>
 			<section class="video">

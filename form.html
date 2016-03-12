@@ -3,19 +3,20 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Седона</title>
+		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
 		<header class="page-header">
 			<nav class="main-nav">
 				<ul class="main-nav__list">
-					<li class="main-nav__item  main-nav__item--active">
+					<li class="main-nav__item">
 						<a href="index.html">главная</a>
 					</li>
 					<li class="main-nav__item">
 						<a href="photo.html">фото и видео</a>
 					</li>
-					<li class="main-nav__item">
-						<span>форма отзыва</span>
+					<li class="main-nav__item  main-nav__item--active">
+						<a>форма отзыва</a>
 					</li>
 					<li class="main-nav__item">
 						<a href="https://htmlacademy.ru/">HTML academy</a>
@@ -34,9 +35,9 @@
 					<img src="http://placehold.it/229x39" alt="" class="intro__img-text">
 				</div>
 				<div class="intro__text-content  text-content">
-					<h2 class="text-content__title">
+					<h1 class="text-content__title">
 						Оставьте свой отзыв
-					</h2>
+					</h1>
 					<p class="text-content__text">
 						Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
 					</p>
@@ -45,26 +46,39 @@
 			<form class="form  form--add-review" action="https://echo.htmlacademy.ru" method="post">
 				<fieldset class="form__fieldset  form__fieldset--user-name">
 					<legend>Представьтесь, пожалуйста:</legend>
-					<label class="form__text-input-label">
-						Имя: <input type="text" class="form__text-input" name="user-name" placeholder="Петр">
-					</label>
-					<label class="form__text-input-label">
-						Фамилия: <input type="text" class="form__text-input" name="user-surname" placeholder="Иванов">
-					</label>
-					<label class="form__text-input-label">
-						Отчество: <input type="text" class="form__text-input" name="user-2nd-name" placeholder="Александрович">
-					</label>
+					<div class="form__row form__row--float">
+						<label class="form__text-input-label" for="user-name">Имя:</label>
+						<div class="form__overflow">
+							<input type="text" class="form__text-input" name="user-name" id="user-name" placeholder="Петр">
+						</div>
+					</div>
+					<div class="form__row form__row--float">
+						<label class="form__text-input-label" for="user-surname">Фамилия:</label>
+						<div class="form__overflow">
+							<input type="text" class="form__text-input" name="user-surname" id="user-surname" placeholder="Иванов">
+						</div>
+					</div>
+					<div class="form__row form__row--float">
+						<label class="form__text-input-label" for="user-2nd-name">Отчество:</label>
+						<div class="form__overflow">
+							<input type="text" class="form__text-input" name="user-2nd-name" id="user-2nd-name" placeholder="Александрович">
+						</div>
+					</div>
 				</fieldset>
 				<fieldset class="form__fieldset  form__fieldset--contacts">
 					<legend>Контактная информация:</legend>
-					<label class="form__contacts-label">
-						Контактный телефон:
-						<input type="tel" class="form__contacts-input  form__contacts-input--tel" name="user-tel" placeholder="Введите телефон">
-					</label>
-					<label class="form__contacts-label">
-						Электронная почта:
-						<input type="email" class="form__contacts-input  form__contacts-input--email" name="user-email" placeholder="Введите e-mail">
-					</label>
+					<div class="form__row">
+						<label class="form__contacts-label" for="user-tel">Контактный телефон:</label>
+						<div class="form__overflow">
+							<input type="tel" class="form__contacts-input" name="user-tel" id="user-tel" placeholder="Введите телефон">
+						</div>
+					</div>
+					<div class="form__row">
+						<label class="form__contacts-label" for="user-email">Электронная почта:</label>
+						<div class="form__overflow">
+							<input type="email" class="form__contacts-input" name="user-email" id="user-email" placeholder="Введите e-mail">
+						</div>
+					</div>
 				</fieldset>
 				<fieldset class="form__fieldset  form__fieldset--impressions">
 					<legend>Ваше общее впечатление:</legend>
