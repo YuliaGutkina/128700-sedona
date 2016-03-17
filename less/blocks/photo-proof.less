@@ -1,3 +1,67 @@
 .photo-proof {
-	outline: 1px solid red;
+	//outline: 1px solid red;
+	
+	display: flex;
+	flex-direction: column;
+	
+	background: @blue;
+	color: @white;
+	
+	&__photo {
+		background: no-repeat 50% 50%;
+		background-size: cover;
+	}
+	
+	&__photo--authentic {
+		background-image: url('../img/photo-city.jpg');
+	}
+	
+	&__photo--bridge {
+		background-image: url('../img/photo-bridge.jpg');
+	}
+}
+
+@media @mobile-widths-only {
+
+	.photo-proof {
+		.mobile-margin;
+		
+		&__content {
+			.mobile-padding;
+		}
+		
+		&__photo {
+			height: 260px;
+			width: 100%;
+		}
+	}
+	
+}
+
+@media @tablet-widths {
+
+	.photo-proof {
+		flex-direction: row;
+		
+		&__content {
+			width: 33.3%;
+		}
+		
+		&__content--right {
+			order: 1;
+		}
+		
+		&__photo {
+			min-height: 250px;
+			flex-grow: 1;
+		}
+		
+	}
+	
+	
+	
+}
+
+@media @desktop-widths {
+
 }

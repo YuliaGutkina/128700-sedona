@@ -8,11 +8,14 @@
 }
 
 .container {
-	width: 320px;
+	min-width: 320px;
+	width: 100%;
 	margin: 0 auto;
+	padding: 0 20px;
 
 	@media @tablet-widths {
-		width: 768px;
+		
+		padding: 0;
 	}
 
 	@media @desktop-widths {
@@ -25,3 +28,14 @@
 	padding: 0;
 	list-style: none;
 }
+
+.mobile-margin {
+	margin-left: -20px;
+	margin-right: -20px;
+}
+
+.mobile-padding {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+

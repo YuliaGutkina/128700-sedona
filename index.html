@@ -8,160 +8,166 @@
 		<link href="css/normalize.css" rel="stylesheet">
 	</head>
 	<body>
-		<header class="page-header">
-			<nav class="main-nav">
-				<ul class="main-nav__list">
-					<li class="main-nav__item  main-nav__item--active">
-						<a>главная</a>
-					</li>
-					<li class="main-nav__item">
-						<a href="photo.html">фото и видео</a>
-					</li>
-					<li class="main-nav__item">
-						<a href="form.html">форма отзыва</a>
-					</li>
-					<li class="main-nav__item">
-						<a href="https://htmlacademy.ru/">HTML academy</a>
-					</li>
-				</ul>
-				<a href="" class="main-nav__logo">
-					<img src="http://placehold.it/102x83">
-				</a>
-				<span class="main-nav__close  close-btn"></span>
-				<span class="main-nav__sandwich  sandwich-btn"></span>
-			</nav>
-		</header>
-		<main>
-			<section class="intro">
-				<div class="intro__photo">
-					<img src="http://placehold.it/280x214" alt="" class="intro__img">
+		<div class="page-wrapper">
+			<header class="page-header">
+				<nav class="main-nav">
+					<ul class="main-nav__list">
+						<li class="main-nav__item  main-nav__item--active">
+							<a>главная</a>
+						</li>
+						<li class="main-nav__item">
+							<a href="photo.html">фото и видео</a>
+						</li>
+						<li class="main-nav__item">
+							<a href="form.html">форма отзыва</a>
+						</li>
+						<li class="main-nav__item">
+							<a href="https://htmlacademy.ru/">HTML academy</a>
+						</li>
+					</ul>
+					<div class="main-nav__logo-wrapper">
+						<a href="" class="main-nav__logo">
+							<img src="img/logo-sedona-mobile.svg" width="102" height="84">
+						</a>
+					</div>
+					<span class="main-nav__close  close-btn"></span>
+					<span class="main-nav__sandwich  sandwich-btn"></span>
+				</nav>
+			</header>
+			<main>
+				<section class="intro">
+					<div class="intro__photo">
+						<img src="img/text-sedona-index.svg" alt="" class="intro__img">
+					</div>
+					<div class="intro__content">
+						<h3 class="intro__title">
+							Седона — небольшой 
+							городок в Аризоне, 
+							заслуживающий большего!
+						</h3>
+						<p class="intro__text">
+							Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!
+						</p>
+					</div>
+				</section>
+				<section class="photo-proof">
+					<div class="photo-proof__content  exclusive">
+						<h3 class="exclusive__title">
+							Настоящий городок
+						</h3>
+						<p class="exclusive__number">
+							&ndash; №1 &ndash;
+						</p>
+						<p>
+							Седона не городок для туристов, там течет своя жизнь
+						</p>
+					</div>
+					<div class="photo-proof__photo  photo-proof__photo--authentic">
+						<img src="" alt="">
+					</div>
+				</section>
+				<section class="features">
+					<div class="features__item  features__item--iconed  features__item--house">
+						<h3 class="features__title">
+							Жилье
+						</h3>
+						<p class="features__text">
+							Рекомендуем пожить в настоящем мотеле, все как в кино!
+						</p>
+					</div>
+					<div class="features__item  features__item--iconed  features__item--souvenir">
+						<h3 class="features__title">
+							Сувениры
+						</h3>
+						<p class="features__text">
+							Не только китайского, но и местного производства!
+						</p>
+					</div>
+					<div class="features__item  features__item--iconed  features__item--food">
+						<h3 class="features__title">
+							Еда
+						</h3>
+						<p class="features__text">
+							Всегда заказывайте фирменный бургер, Вы не разочаруетесь!
+						</p>
+					</div>
+				</section>
+				<section class="photo-proof">
+					<div class="photo-proof__content  photo-proof__content--right  exclusive">
+						<h3 class="exclusive__title">
+							Там есть Мост дьявола
+						</h3>
+						<p class="exclusive__number">
+							&ndash; №2 &ndash;
+						</p>
+						<p>
+							Да, по нему можно пройти! Если конечно вы осмелитесь
+						</p>
+					</div>
+					<div class="photo-proof__photo  photo-proof__photo--bridge">
+						<img src="" alt="">
+					</div>
+				</section>
+				<section class="exclusive-list">
+					<div class="exclusive">
+						<h3 class="exclusive__title">
+							Небольшая площадь
+						</h3>
+						<p class="exclusive__number">
+							&ndash; №3 &ndash;
+						</p>
+						<p>
+							Все достопримеча&shy;тельности находятся очень близко
+						</p>
+					</div>
+					<div class="exclusive">
+						<h3 class="exclusive__title">
+							Красивая дорога
+						</h3>
+						<p class="exclusive__number">
+							&ndash; №4 &ndash;
+						</p>
+						<p>
+							Ехать в Седону из Лас-Вегаса совсем не скучно!
+						</p>
+					</div>
+					<div class="exclusive">
+						<h3 class="exclusive__title">
+							Мало туристов
+						</h3>
+						<p class="exclusive__number">
+							&ndash; №5 &ndash;
+						</p>
+						<p>
+							Большинство едет в Гранд Каньон и толпится там
+						</p>
+					</div>
+				</section>
+				<section class="search">
+					<h2 class="search__title">
+						Заинтересовались?
+					</h2>
+					<p class="search__text">
+						Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне
+					</p>
+					<a href="#" class="search__btn  btn">Найти гостиницу</a>
+				</section>
+			</main>
+			<aside class="map"></aside>
+			<footer class="page-footer">
+				<div class="page-footer__tags">#visitsedona</div>
+				<div class="page-footer__social  social-links">
+					<a href="" class="social-links__link  social-links__link--twitter">twitter</a>
+					<a href="" class="social-links__link  social-links__link--facebook">facebook</a>
+					<a href="" class="social-links__link  social-links__link--youtube">youtube</a>
 				</div>
-				<div class="intro__content">
-					<h3 class="intro__title">
-						Седона — небольшой 
-						городок в Аризоне, 
-						заслуживающий большего!
-					</h3>
-					<p class="intro__text">
-						Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!
-					</p>
+				<div class="page-footer__copyright">
+					<span class="page-footer__copyright-text">Разработано</span>
+					<a href="" class="page-footer__copyright-link">
+						<img src="http://placehold.it/27x34" alt="">
+					</a>
 				</div>
-			</section>
-			<section class="photo-proof">
-				<div class="photo-proof__content  exclusive">
-					<h3 class="exclusive__title">
-						Настоящий городок
-					</h3>
-					<p class="exclusive__number">
-						&ndash; №1 &ndash;
-					</p>
-					<p>
-						Седона не городок для туристов, там течет своя жизнь
-					</p>
-				</div>
-				<div class="photo-proof__photo">
-					<img src="http://placehold.it/320x260" alt="">
-				</div>
-			</section>
-			<section class="features">
-				<div class="features__item  features__item--iconed  features__item--house">
-					<h3 class="features__title">
-						Жилье
-					</h3>
-					<p class="features__text">
-						Рекомендуем пожить в настоящем мотеле, все как в кино!
-					</p>
-				</div>
-				<div class="features__item  features__item--iconed  features__item--souvenir">
-					<h3 class="features__title">
-						Сувениры
-					</h3>
-					<p class="features__text">
-						Не только китайского, но и местного производства!
-					</p>
-				</div>
-				<div class="features__item  features__item--iconed  features__item--food">
-					<h3 class="features__title">
-						Еда
-					</h3>
-					<p class="features__text">
-						Всегда заказывайте фирменный бургер, Вы не разочаруетесь!
-					</p>
-				</div>
-			</section>
-			<section class="photo-proof">
-				<div class="photo-proof__content  exclusive">
-					<h3 class="exclusive__title">
-						Там есть Мост дьявола
-					</h3>
-					<p class="exclusive__number">
-						&ndash; №2 &ndash;
-					</p>
-					<p>
-						Да, по нему можно пройти! Если конечно вы осмелитесь
-					</p>
-				</div>
-				<div class="photo-proof__photo">
-					<img src="http://placehold.it/320x260" alt="">
-				</div>
-			</section>
-			<section class="exclusive-list">
-				<div class="exclusive">
-					<h3 class="exclusive__title">
-						Небольшая площадь
-					</h3>
-					<p class="exclusive__number">
-						&ndash; №3 &ndash;
-					</p>
-					<p>
-						Все достопримечательности находятся очень близко
-					</p>
-				</div>
-				<div class="exclusive">
-					<h3 class="exclusive__title">
-						Красивая дорога
-					</h3>
-					<p class="exclusive__number">
-						&ndash; №4 &ndash;
-					</p>
-					<p>
-						Ехать в Седону из Лас-Вегаса совсем не скучно!
-					</p>
-				</div>
-				<div class="exclusive">
-					<h3 class="exclusive__title">
-						Мало туристов
-					</h3>
-					<p class="exclusive__number">
-						&ndash; №5 &ndash;
-					</p>
-					<p>
-						Большинство едет в Гранд Каньон и толпится там
-					</p>
-				</div>
-			</section>
-			<section class="search">
-				<h2 class="search__title">
-					Заинтересовались?
-				</h2>
-				<p class="search__text">
-					Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне
-				</p>
-				<a href="#" class="btn">Найти гостиницу</a>
-			</section>
-		</main>
-		<aside class="map"></aside>
-		<footer class="page-footer">
-			<div class="page-footer__tags">#visitsedona</div>
-			<div class="page-footer__social  social-links">
-				<a href="" class="social-links__link  social-links__link--twitter"></a>
-				<a href="" class="social-links__link  social-links__link--facebook"></a>
-				<a href="" class="social-links__link  social-links__link--youtube"></a>
-			</div>
-			<div class="page-footer__copyright">
-				<span class="page-footer__copyright-text">Разработано</span>
-				<a href="" class="page-footer__copyright-link"></a>
-			</div>
-		</footer>
+			</footer>
+		</div>
 	</body>
 </html>

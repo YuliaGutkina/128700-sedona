@@ -9,16 +9,54 @@ body {
 	font-style: normal;
 	text-transform: uppercase;
 
-	background-color: #f2f2f2;
+	background-color: @grey;
 }
 
-body > * {
+.page-wrapper {
 	background: #ffffff;
-	.container; //это временно
+	.container; 
 }
 
 * {
 	box-sizing: border-box;
+	text-align: center;
+}
+
+h1 {
+}
+
+h2 {
+}
+
+h3 {
+	font-size: 18px;
+	line-height: 26px;
+}
+
+[class*="__title"] {
+	margin: 0;
+	margin-bottom: 14px;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.btn {
+	display: inline-block;
+	vertical-align: top;
+	width: 100%;
+	padding: 15px;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	color: @white;
+	text-decoration: none;
+	text-align: center;
+	background: @blue;
+	border: none;
+	outline: none;
 }
 
 @media @tablet-widths {
@@ -28,3 +66,5 @@ body > * {
 @media @desktop-widths {
 
 }
+
+
