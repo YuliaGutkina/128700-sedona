@@ -1,3 +1,83 @@
 .form {
-	//outline: 1px solid red;
+	outline: 1px solid red;
+	
+	display: flex;
+	flex-direction: column;
+	
+	&__fieldset {
+		margin: 0;
+		padding: 0;
+		border: none;
+		outline: 1px solid yellow;
+	}
+	
+	&__fieldset--submit {
+		border: none;
+	}
+	
+}
+
+@media @mobile-widths-only {
+	
+	.form {
+	
+		&__fieldset {
+			.mobile-margin;
+			.mobile-padding;
+		}
+		
+	}
+		
+}
+
+@media @tablet-widths {
+
+	.form {
+		
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin-bottom: 55px;
+		padding-left: 60px;
+		padding-right: 60px;
+	
+		&__fieldset {
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			border-top: 1px solid #dbdbdb;
+		}
+		
+		&__fieldset--impressions {
+			order: -1;
+		}
+		
+		&__fieldset--impressions,
+		&__fieldset--user-name,
+		&__fieldset--submit {
+			width: 50%;
+			border: none;
+		}
+		
+	}
+	
+	
+	
+}
+
+@media @desktop-widths {
+	
+	.form {
+		
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin-bottom: 65px;
+		padding-left: 120px;
+		padding-right: 120px;
+	
+		&__fieldset {
+			
+		}
+		
+	}
+	
 }
