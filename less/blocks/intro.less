@@ -8,14 +8,25 @@
 		line-height: 0;
 	}
 	
-	&__photo img {
+	&__photo--inner {
+		padding-top: 50px;
+		padding-bottom: 70px;
+		background-position: 50% 100%;
+	}
+	
+	&__img {
 		width: 280px;
 		height: auto;
+	}
+	
+	&__photo--inner .intro__img {
+		width: 230px;
 	}
 	
 	&__content {
 		padding-top: 40px;
 		padding-bottom: 40px;
+		.width-limit;
 	}
 	
 	&__title {
@@ -49,16 +60,23 @@
 			padding-bottom: 90px;
 		}
 		
-		&__content{
-			width: 500px;
-			margin: 0 auto;
+		&__photo--inner {
+			padding-top: 95px;
+			padding-bottom: 120px;
 		}
+		
+		&__photo--inner .intro__img {
+			width: 460px;
+		}
+		
 	}
 	
 }
 
 @media @desktop-widths {
 	.intro {
-	
+		&__photo--inner {
+			padding-top: 100px;
+		}
 	}
 }
