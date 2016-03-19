@@ -1,3 +1,86 @@
 .intro {
-	outline: 1px solid yellow;
+	//outline: 1px solid red;
+		
+	&__photo {
+		padding-top: 90px;
+		padding-bottom: 85px;
+		background: #e0edf5 url('../img/bg-back-mobile.jpg') no-repeat 50% 50%;
+		line-height: 0;
+	}
+	
+	&__photo--inner {
+		padding-top: 50px;
+		padding-bottom: 70px;
+		background-position: 50% 100%;
+	}
+	
+	&__img {
+		width: 280px;
+		height: auto;
+	}
+	
+	&__photo--inner .intro__img {
+		width: 230px;
+	}
+	
+	&__content {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		.width-limit;
+	}
+	
+	&__content--form-page {
+		padding-bottom: 10px;
+	}
+	
+	&__title {
+		margin-bottom: 25px;
+	}
+	
+}
+
+@media @mobile-widths-only {
+
+	.intro {
+		.mobile-margin;
+	
+		&__photo {
+			.mobile-padding;
+		}
+		
+		&__content{
+			.mobile-padding;
+		}
+	}
+	
+}
+
+@media @tablet-widths {
+
+	.intro {
+	
+		&__photo {
+			padding-top: 70px;
+			padding-bottom: 90px;
+		}
+		
+		&__photo--inner {
+			padding-top: 95px;
+			padding-bottom: 120px;
+		}
+		
+		&__photo--inner .intro__img {
+			width: 460px;
+		}
+		
+	}
+	
+}
+
+@media @desktop-widths {
+	.intro {
+		&__photo--inner {
+			padding-top: 100px;
+		}
+	}
 }

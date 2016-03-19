@@ -1,3 +1,61 @@
 .features {
-	outline: 1px solid blue;
+	//outline: 1px solid blue;
+	
+	display: flex;
+	flex-direction: column;
+	
+	padding-top: 30px;
+	padding-bottom: 20px;
+	
+	&__item {
+		margin-bottom: 20px;
+	}
+	
+}
+
+@media @mobile-widths-only {
+
+	.features {
+	
+		&__item--iconed {
+			padding-left: 50px;
+		}
+		
+		&__title {
+			padding-top: 10px;
+			margin-bottom: 25px;
+			text-align: left;
+		}
+	
+		&__text {
+			text-align: left;
+		}
+	
+	}
+	
+}
+
+@media @tablet-widths {
+
+	.features {
+		flex-direction: row;
+		justify-content: space-around;
+		
+		&__item {
+			width: 33%;
+			padding-top: 95px;
+			padding-left: 5%;
+			padding-right: 5%;
+		}
+		
+		&__item--souvenir {
+			order: 1;
+		}
+		
+	}
+	
+}
+
+@media @desktop-widths {
+	
 }

@@ -1,3 +1,78 @@
 .video {
-	outline: 1px solid blue;
+	// outline: 1px solid blue;
+	
+	margin-bottom: 40px;
+	
+	&__text-content {
+		.width-limit;
+		
+		padding: 20px;
+		padding-top: 35px;
+	}
+	
+	&__title {
+		margin-bottom: 35px;
+	}
+	
+	&__video-content{
+		line-height: 0;
+		
+	}
+	
+	&__video-content video {
+		width: 100%;
+		outline: 1px solid green;
+		z-index: -1;
+	}
+	
+	&__controls {
+		min-height: 110px;
+		margin-top: -45px;
+		background: @grey;
+	}
+	
+	
+}
+
+@media @mobile-widths-only {
+
+	.video {
+	
+		&__video-content {
+			.mobile-margin;
+		}
+		
+		&__controls {
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+		
+	}
+	
+}
+
+@media @tablet-widths {
+	
+	.video {
+	
+		max-width: 800px;
+		margin: 0 auto;
+	
+		&__video-content {
+			position: relative;
+		}
+		
+		&__controls {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+		}
+		
+	}	
+	
+}
+
+@media @desktop-widths {
+	
 }
