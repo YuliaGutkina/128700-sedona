@@ -8,10 +8,12 @@
 		
 		padding: 20px;
 		padding-top: 35px;
+    padding-bottom: 22px;
 	}
 	
 	&__title {
-		margin-bottom: 35px;
+    font-size: 18px;
+		margin-bottom: 25px;
 	}
 	
 	&__video-content{
@@ -21,6 +23,7 @@
 	
 	&__video-content video {
 		width: 100%;
+		height: 200px;
 		outline: 1px solid green;
 		z-index: -1;
 	}
@@ -55,19 +58,25 @@
 	
 	.video {
 	
-		max-width: 800px;
-		margin: 0 auto;
-	
-		&__video-content {
-			position: relative;
-		}
-		
-		&__controls {
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			width: 100%;
-		}
+	  max-width: 800px;
+	  margin: 0 auto;
+  
+	  &__video-content {
+		  position: relative;
+      width: 100%;
+      height: 500px;
+	  }
+	  
+	  &__video-content video {
+		height: 500px;
+	  }
+	  
+	  &__controls {
+		  position: absolute;
+		  bottom: 0;
+		  left: 0;
+		  width: 100%;
+	  }
 		
 	}	
 	

@@ -31,7 +31,7 @@
 	
 	&__logo-wrapper {
 		position: relative;
-		height: 55px;
+		height: 56px;
 		text-align: center;
 	}
 	
@@ -58,6 +58,21 @@
 			border-bottom: 1px solid #678fa8;
 			border-top: 1px solid #9ac2db;
 		}
+    
+    &__close,
+    &__sandwich {
+      position: absolute;
+    }
+    
+    &__close {
+      top: 17px;
+      right: 0;
+    }
+    
+    &__sandwich {
+      bottom: 18px;
+      right: 0;
+    }
 		
 	}
 	
@@ -81,6 +96,10 @@
 		&__item:nth-child(4n+2) {
 			margin-right: 20%;
 		}
+    
+    &__item a {
+      padding: 17px;
+    }
 		
 		&__logo-wrapper {
 			height: 0;

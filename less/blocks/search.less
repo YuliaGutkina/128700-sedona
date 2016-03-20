@@ -1,16 +1,20 @@
 .search {
 	//outline: 1px solid blue;
 	
-	padding-top: 30px;
+	padding-top: 25px;
 	padding-bottom: 50px;
 	.width-limit;
 	
 	&__title {
 		margin-bottom: 25px;
 	}
+  
+  &__text {
+    line-height: 1.7 * @font-size;
+  }
 	
 	&__btn {
-		margin-top: 35px;
+		margin-top: 20px;
 	}
 }
 
@@ -26,11 +30,11 @@
 		padding-bottom: 60px;
 		
 		&__title {
-			margin-bottom: 35px;
+			margin-bottom: 26px;
 		}
 		
 		&__btn {
-			margin-top: 40px;
+			margin-top: 30px;
 		}
 	
 	}
@@ -39,5 +43,15 @@
 
 @media @desktop-widths {
 
+  .search {
+		
+    padding-bottom: 66px;
+    
+		&__btn {
+			margin-top: 38px;
+		}
+	
+	}
+  
 }
 

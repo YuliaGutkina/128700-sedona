@@ -4,26 +4,34 @@
 	display: flex;
 	flex-direction: column;
 	
-	padding-top: 30px;
+	padding-top: 25px;
 	padding-bottom: 20px;
 	
 	&__item {
-		margin-bottom: 20px;
+		margin-bottom: 3px;
 	}
+  
+  &__title {
+    padding-top: 10px;
+    margin-bottom: 15px;
+    text-align: left;
+  }
 	
 }
 
 @media @mobile-widths-only {
 
 	.features {
+  
+    &__item {
+      
+    }
 	
 		&__item--iconed {
 			padding-left: 50px;
 		}
 		
 		&__title {
-			padding-top: 10px;
-			margin-bottom: 25px;
 			text-align: left;
 		}
 	
@@ -40,10 +48,13 @@
 	.features {
 		flex-direction: row;
 		justify-content: space-around;
+    
+    padding-top: 50px;
+    padding-bottom: 45px;
 		
 		&__item {
-			width: 33%;
-			padding-top: 95px;
+			width: 33.3%;
+			padding-top: 100px;
 			padding-left: 5%;
 			padding-right: 5%;
 		}
@@ -51,11 +62,24 @@
 		&__item--souvenir {
 			order: 1;
 		}
+    
+    &__title {
+      margin-bottom: 20px;
+			text-align: center;
+		}
+	
+		&__text {
+			text-align: center;
+		}
 		
 	}
 	
 }
 
 @media @desktop-widths {
-	
+
+	.features  {
+    padding-bottom: 65px;
+  }
+  
 }
