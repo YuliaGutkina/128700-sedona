@@ -7,7 +7,7 @@
 		width: 100%;
 		min-width: 280px;
 		height: 280px;
-		background: @blue;
+		.outline;
 	}
 	
 	&__info *{
@@ -17,7 +17,7 @@
 	&__info {
 		display: flex;
 		flex-direction: column;
-		padding-top: 17px;
+		padding-top: 10px;
 		padding-bottom: 12px;
 	}
 	
@@ -27,7 +27,7 @@
 	
 	&__author {
 		margin-top: 0;
-    margin-bottom: 4px;
+    margin-bottom: 7px;
 		text-transform: none;
 	}
 	
@@ -50,6 +50,16 @@
 	
 }
 
+@media @mobile-widths-only {
+  
+  .photo {
+    .border-bottom;
+    .mobile-margin;
+    .mobile-padding(20px);
+  }
+  
+}
+
 @media @tablet-widths {
 	
 	.photo {
@@ -65,6 +75,7 @@
 			justify-content: space-between;
 			align-items: center;
 			padding: 20px;
+      padding-top: 10px;
 		}
 		
 		&__author {

@@ -22,19 +22,16 @@ body {
 	text-align: center;
 }
 
-h1 {
-	font-size: 18px;
-  line-height: 26px;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-h2 {
-  font-size: 21px;
-  line-height: 26px;
-}
-
+h1, 
+h2,
 h3 {
 	font-size: 18px;
-	line-height: 26px;
+  line-height: 26px;
 }
 
 h4 {
@@ -46,6 +43,7 @@ h4 {
   
   h1 {
 		font-size: 30px;
+    line-height: 36px;
 	}
   
   h2 {
@@ -83,11 +81,36 @@ input, textarea {
   background: @grey;
   text-align: left;
   color: @black;
-  -moz-placeholder { color: red; }
 }
+
+input::-webkit-input-placeholder {color:@black;}
+input::-moz-placeholder          {color:@black;}
+input:focus::-webkit-input-placeholder {color: transparent}
+input:focus::-moz-placeholder          {color: transparent}
+
+textarea::-webkit-input-placeholder {color:@black;}
+textarea::-moz-placeholder          {color:@black;}
+textarea:focus::-webkit-input-placeholder {color: transparent}
+textarea:focus::-moz-placeholder          {color: transparent}
 
 @media @desktop-widths {
 
+}
+
+.tablet-hidden-text {
+  @media @tablet-widths {
+		display: none;
+	}
+
+	@media @desktop-widths {
+		display: inline;
+	}
+}
+
+.desktop-hidden-text {
+	@media @desktop-widths {
+		display: none;
+	}
 }
 
 
