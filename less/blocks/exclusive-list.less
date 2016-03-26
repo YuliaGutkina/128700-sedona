@@ -1,38 +1,25 @@
 .exclusive-list {
 	//outline: 1px solid red;
-	background: @grey;
-}
-
-.exclusive-list .exclusive {
-	padding-top: 25px;
-	padding-bottom: 15px;
+  
+  display: flex;
+  flex-direction: column;
+  background: @grey;
+  
 }
 
 @media @mobile-widths-only {
-
-	.exclusive-list {
-		.mobile-margin;
-	}
-
-	.exclusive-list .exclusive {
-		.mobile-padding;
-	}
-	
+   .exclusive-list {
+    .mobile-margin;
+    .mobile-padding(20px);
+   }
 }
-
 
 @media @tablet-widths {
 
-	.exclusive-list {
-		.clearfix;
-		padding-top: 15px;
-	}
+  .exclusive-list {
+    flex-direction: row;
+  }
 
-	.exclusive-list .exclusive {
-		float: left;
-		width: 33.3%;
-	}
-	
 }
 
 @media @desktop-widths {

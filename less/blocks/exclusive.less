@@ -1,9 +1,31 @@
 .exclusive{
 	//outline: 1px solid green;
 	
-	padding-top: 40px;
-	padding-bottom: 30px;
+	padding-top: 25px;
+	padding-bottom: 15px;
+  
+  
+  &__title {
+    margin-bottom: 8px;
+  }
+  
+  &__number {
+    margin-top: 8px;
+    margin-bottom: 16px;
+  }
 	
+}
+
+@media @mobile-widths-only {
+	.exclusive {
+    
+    .border-bottom;
+  }
+  
+  .exclusive:last-child {
+    border: none;
+  }
+  
 }
 
 
@@ -11,13 +33,31 @@
 @media @tablet-widths {
 
 	.exclusive {
-		padding-left: 40px;
-		padding-right: 40px;
+    width: 33.3%;
+    padding-top: 45px;
+		padding-left: 45px;
+		padding-right: 45px;
+    padding-bottom: 30px;
+    
 		
 		&__title {
-			width: 130px;
-			margin: 0 auto;
+			width: 152px;
+			margin: 0 auto;      
 		}
+    
+    &__number {
+      margin-bottom: 23px;
+    }
+    
 	}
 	
+}
+
+
+@media @desktop-widths {
+
+  .exclusive {
+    padding-bottom: 52px;  
+	}
+
 }

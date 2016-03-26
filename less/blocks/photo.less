@@ -1,13 +1,13 @@
 .photo {
-	outline: 1px solid yellow;
+	// outline: 1px solid yellow;
 	
-	padding-top: 20px;
+	padding-top: 22px;
 	
 	&__img {
 		width: 100%;
 		min-width: 280px;
-		min-height: 280px;
-		background: @blue;
+		height: 280px;
+		.outline;
 	}
 	
 	&__info *{
@@ -17,16 +17,17 @@
 	&__info {
 		display: flex;
 		flex-direction: column;
-		padding-top: 20px;
-		padding-bottom: 20px;
+		padding-top: 10px;
+		padding-bottom: 12px;
 	}
 	
 	&__title {
-		margin-bottom: 5px;
+		margin-bottom: 0;
 	}
 	
 	&__author {
-		margin-top: 5px;
+		margin-top: 0;
+    margin-bottom: 7px;
 		text-transform: none;
 	}
 	
@@ -49,8 +50,14 @@
 	
 }
 
-.photo--hidden {
-	display: none;
+@media @mobile-widths-only {
+  
+  .photo {
+    .border-bottom;
+    .mobile-margin;
+    .mobile-padding(20px);
+  }
+  
 }
 
 @media @tablet-widths {
@@ -58,12 +65,17 @@
 	.photo {
 		padding-top: 0;
 		width: 50%;
+    
+    &__img {
+      height: 265px;
+    }
 		
 		&__info {
 			flex-direction: row;
 			justify-content: space-between;
 			align-items: center;
 			padding: 20px;
+      padding-top: 10px;
 		}
 		
 		&__author {
@@ -76,12 +88,13 @@
 		
 	}
 	
-	.photo--hidden {
-		display: block;
-	}
-	
 	.photo--panorama {
-		width: 100%;
+	  width: 100%;
+    
+    img {
+      height: 400px;
+    }
+    
 	}
 		
 }
@@ -104,9 +117,11 @@
 	
 	.photo {
 		width: 33.3%;
-		
 	}
-	
+  
+	.photo--panorama {
+		width: 100%;
+	}
 	
 	
 	

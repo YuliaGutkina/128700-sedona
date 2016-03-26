@@ -2,8 +2,8 @@ body {
 	margin: 0;
 	padding: 0;
  
-	font-size: 14px;
-	line-height: 21px;
+	font-size: @font-size;
+	line-height: 1.5 * @font-size;
 	font-family: 'PT Sans', Arial, sans-serif;
 	color: #333333;
 	font-style: normal;
@@ -22,16 +22,16 @@ body {
 	text-align: center;
 }
 
-h1 {
-	font-size: 18px;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-h2 {
-}
-
+h1, 
+h2,
 h3 {
 	font-size: 18px;
-	line-height: 26px;
+  line-height: 26px;
 }
 
 h4 {
@@ -39,9 +39,29 @@ h4 {
 	line-height: 24px;
 }
 
+@media @tablet-widths {
+  
+  h1 {
+		font-size: 30px;
+    line-height: 36px;
+	}
+  
+  h2 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  h3 {
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+
+
+
 [class*="__title"] {
 	margin: 0;
-	margin-bottom: 14px;
+	margin-bottom: @font-size;
 }
 
 a {
@@ -49,30 +69,64 @@ a {
 	text-decoration: none;
 }
 
-.btn {
-	display: inline-block;
-	vertical-align: top;
-	width: 100%;
-	padding: 15px;
-	font-size: 21px;
-	line-height: 26px;
-	font-weight: bold;
-	color: @white;
-	text-decoration: none;
-	text-align: center;
-	background: @blue;
-	border: none;
-	outline: none;
+input, textarea {
+  min-height: 57px;
+  padding: 11px 20px;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: bold;
+  text-tranform: none;
+  border: none;
+  outline: none;
+  background: @grey;
+  text-align: left;
+  color: @black;
+  border: 4px solid @grey;
+  
+  &:hover {
+    background: @grey2;
+    border: 4px solid @grey2;
+  }
+  
+  &:focus {
+    border: 4px solid @grey2;
+    background: transparent;
+  }
+  
 }
 
-@media @tablet-widths {
-	h1 {
-		font-size: 30px;
-	}
+textarea {
+  font-size: 18px;
 }
+
+input::-webkit-input-placeholder {color:@black;}
+input::-moz-placeholder          {color:@black;}
+input:focus::-webkit-input-placeholder {color: transparent}
+input:focus::-moz-placeholder          {color: transparent}
+
+textarea::-webkit-input-placeholder {color:@black;}
+textarea::-moz-placeholder          {color:@black;}
+textarea:focus::-webkit-input-placeholder {color: transparent}
+textarea:focus::-moz-placeholder          {color: transparent}
 
 @media @desktop-widths {
 
+}
+
+.tablet-hidden-text {
+  @media @tablet-widths {
+		display: none;
+	}
+
+	@media @desktop-widths {
+		display: inline;
+	}
+}
+
+.desktop-hidden-text {
+	@media @desktop-widths {
+		display: none;
+	}
 }
 
 

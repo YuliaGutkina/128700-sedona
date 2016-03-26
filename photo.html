@@ -7,7 +7,7 @@
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
-		<div class="page-wrapper">
+		<div class="page-wrapper  page-wrapper--inner">
 			<header class="page-header">
 				<nav class="main-nav">
 					<ul class="main-nav__list">
@@ -34,8 +34,8 @@
 				</nav>
 			</header>
 			<main>
-				<section class="intro">
-					<div class="intro__photo  intro__photo--inner">
+				<section class="intro  intro">
+					<div class="intro__photo">
 						<img src="img/text-sedona.svg" alt="" class="intro__img">
 					</div>
 					<div class="intro__content">
@@ -48,14 +48,14 @@
 					</div>
 				</section>
 				<section class="photo-list">
-					<article class="photo  photo--hidden  photo--panorama">
+					<article class="photo  photo--panorama">
 						<img src="" alt="" class="photo__img">
 						<section class="photo__info"> 
 							<div class="photo__about">
 								<h4 class="photo__title">Неродные просторы</h4>
 								<p class="photo__author">
 									Автор фото:  
-									<a href="" class="photo__author-name">Борис</a>
+									<a href="" class="photo__author-name">Борис</a> 
 								</p>
 							</div>
 							<footer class="photo__likes"> 
@@ -124,7 +124,16 @@
 					</div>
 					<div class="video__video-content">
 						<video src="" poster=""></video>
-						<div class="video__controls"></div>
+						<div class="video__controls">
+              <div class="video__volume">
+                <div class="video__volume-range">
+                  <div class="video__slider"></div>
+                </div>
+              </div>
+              <div class="video__replay"></div>
+              <div class="video__subtitles"></div>
+              <div class="video__fullscreen"></div>
+            </div>
 					</div>
 				</section>
 			</main>

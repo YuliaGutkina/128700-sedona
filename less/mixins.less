@@ -8,13 +8,13 @@
 }
 
 .container {
-	min-width: 320px;
-	width: 100%;
+	/* min- */width: 320px;
+	/* width: 100%; */
 	margin: 0 auto;
 	padding: 0 20px;
 
 	@media @tablet-widths {
-		
+		width: 768px; //tmp
 		padding: 0;
 	}
 
@@ -34,14 +34,37 @@
 	margin-right: -20px;
 }
 
-.mobile-padding {
-	padding-left: 20px;
-	padding-right: 20px;
+.mobile-padding(@padding: 30px) {
+	padding-left: @padding;
+	padding-right: @padding;
 }
 
-.width-limit {
-	max-width: 460px;
+.width-limit(@width: 460px) {
+	max-width: @width;
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.border-bottom {
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.border-left {
+  border-left: 1px solid #d6d6d6;
+}
+
+.outline { //tmp
+  outline: 1px solid green;
+}
+
+.btn-hover {
+  background: @blue-hvr;
+}
+
+.btn-down {
+  background: @blue-down;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
 
