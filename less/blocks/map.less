@@ -2,7 +2,10 @@
 	//outline: 1px solid brown;
 	
 	height: 350px;
+	width: 320px;
+	
 	background: url('../img/bg-map-mobile.jpg') no-repeat 50% 50%;
+    
 }
 
 @media @mobile-widths-only {
@@ -10,5 +13,23 @@
 	.map {
 		.mobile-margin;
 	}
+
+}
+
+@media @tablet-widths {
+
+	.map {
+		background-image: url('../img/bg-map-tablet.jpg');
+		width: 100%;
+	}
 	
 }
+
+@media @desktop-widths {
+
+	.map {
+		background-image: url('../img/bg-map-desktop.jpg');
+	}
+	
+}
+

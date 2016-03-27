@@ -6,7 +6,7 @@
 
   .exclusive {
     background: @blue;
-    color: @white;
+    color: #ffffff;
     padding-top: 40px;
     padding-bottom: 25px;
   }
@@ -18,10 +18,20 @@
 	
 	&__photo--authentic {
 		background-image: url('../img/photo-city.jpg');
+    
+    @media (min-resolution: 1.5dppx) {
+      background-image: url('../img/photo-city@2x.jpg');
+    }
+    
 	}
 	
 	&__photo--bridge {
 		background-image: url('../img/photo-bridge.jpg');
+    
+    @media (min-resolution: 1.5dppx) {
+      background-image: url('../img/photo-bridge@2x.jpg');
+    }
+    
 	}
 }
 
@@ -41,10 +51,17 @@
 		}
 		
 		&__photo {
-      
 			height: 260px;
 			width: 100%;
 		}
+    
+    &--first {
+      background-image: url('../img/bg-triangle.svg');
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+    
 	}
 	
 }

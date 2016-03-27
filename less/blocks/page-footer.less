@@ -16,21 +16,32 @@
 	}
 	
 	&__social {
-		margin-bottom: 40px;
+		margin-bottom: 35px;
 	}
 	
 	&__copyright {
-		line-height: 34px;
+    vertical-align: middle;
+    line-height: 40px;
 	}
 	
 	&__copyright-link {
 		display: inline-block;
 		vertical-align: middle;
-		width: 27px;
-		height: 34px;
-		margin-left: 5px;
+		width: 40px;
 		font-size: 0;
-		.outline;
+    
+    svg {
+      vertical-align: middle;
+    }
+    
+    &:hover svg {
+      fill: @blue;
+    }
+    
+    &:active svg {
+      opacity: 0.3;
+    }
+    
 	}
 }
 
