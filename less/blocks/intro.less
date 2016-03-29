@@ -1,40 +1,39 @@
 .intro {
 	//outline: 1px solid red;
-  
+
   line-height: 26px;
-		
-  &__photo {
-	  padding-top: 90px;
-	  padding-bottom: 85px;
-	  background: #e0edf5;
-	  background: url('../img/bg-intro-triangle-mobile.svg') no-repeat 100% 100%,
-				  url('../img/bg-back-mobile.jpg') no-repeat 50% 50%;
-	  background-size: contain, 768px;
-	  line-height: 0;
-  }
-  
-  @media (min-resolution: 1.5dppx){
-    &__photo {
+
+	&__photo {
+		padding-top: 90px;
+		padding-bottom: 85px;
+    line-height: 0;
+    background: url('../img/bg-intro-triangle-mobile.svg') no-repeat 50% 100%,
+				        url('../img/bg-back-mobile.jpg') no-repeat 50% 50%;
+	  background-size: 104%, 768px;
+
+    @media (min-resolution: 144dpi),
+           (min-resolution: 1.5dppx) {
       background-image: url('../img/bg-intro-triangle-mobile.svg'),
                         url('../img/bg-back-mobile@2x.jpg');
     }
-  }
-	
+
+	}
+
 	&__img {
 		width: 280px;
 		height: auto;
 }
-	
+
 	&__content {
 		padding-top: 40px;
 		padding-bottom: 28px;
 		.width-limit(500px);
 	}
-  
+
 	&__title {
 		margin-bottom: 29px;
 	}
-  
+
 }
 
 .page-wrapper--inner .intro{
@@ -43,161 +42,160 @@
 		padding-bottom: 67px;
 		background-position: 50% 100%;
 	}
-	
+
 	&__img {
 		width: 230px;
 	}
-  
+
   &__content {
     padding-bottom: 13px;
     padding-top: 38px;
   }
-	
+
 	&__title{
 	  margin-bottom: 26px
 	}
-  
+
   &__text{
     line-height: 24px;
   }
 }
 
 .page-wrapper--form  .intro{
-   
+
   &__content {
     padding-bottom: 3px;
   }
-  
+
 }
 
 @media @mobile-widths-only {
 
 	.intro {
 		.mobile-margin;
-	
+
 		&__photo {
 			.mobile-padding(20px);
 		}
-		
+
 		&__content{
 			.mobile-padding;
 		}
-      
+
 	}
-  
+
   .page-wrapper--inner .intro {
 
     .border-bottom;
-    
+
     &__content {
       .mobile-padding(20px);
     }
 
   }
-  
-  
-  
+
+
+
 }
 
 @media @tablet-widths {
 
 	.intro {
-  
+
 		&__photo {
-		  background-image: url('../img/bg-intro-triangle-tablet.svg'),
-							url('../img/bg-back-mobile.jpg');
+      padding-top: 77px;
+      padding-bottom: 91px;
+      background-image: url('../img/bg-intro-triangle-tablet.svg'),
+							url('../img/bg-back-desktop.jpg');
 		  background-size: contain, cover;
-		  padding-top: 77px;
-		  padding-bottom: 91px;
-      
-      @media (min-resolution: 1.5dppx){
-        &__photo {
+
+      @media (min-resolution: 144dpi),
+             (min-resolution: 1.5dppx) {
           background-image: url('../img/bg-intro-triangle-tablet.svg'),
-                            url('../img/bg-back-mobile@2x.jpg');
-        }
+                            url('../img/bg-back-desktop@2x.jpg');
       }
-      
+
 		}
-    
+
     &__img {
 			width: 460px;
 		}
-	 
+
 	  &__content {
 		padding-top: 50px;
 		padding-bottom: 35px;
 	  }
-	
+
 	}
-  
+
   .page-wrapper--inner .intro {
     &__photo{
 		  padding-top: 95px;
 		  padding-bottom: 115px;
+      background-size: contain, 1200px;
 	  }
-    
+
     &__content {
       padding-top: 70px;
       padding-bottom: 55px;
       width: 440px;
     }
-    
+
     &__title {
       margin-bottom: 25px;
     }
-    
+
     &__img {
       width: 460px;
     }
-    
+
   }
-  
+
   .page-wrapper--form  .intro {
     &__content {
       padding-bottom: 42px;
     }
   }
-	
+
 }
 
 @media @desktop-widths {
 
   .intro {
-  
-  &__photo {
-	background-image: url('../img/bg-intro-triangle-desktop.svg'),
-					  url('../img/bg-back-desktop.jpg');
-	background-size: contain, cover;
-  }
-	
-  @media (min-resolution: 1.5dppx){
     &__photo {
-      background-image: url('../img/bg-back-desktop@2x.jpg'),
-                        url('../img/bg-back-desktop.jpg');
+      background-image: url('../img/bg-intro-triangle-desktop.svg'),
+  					            url('../img/bg-back-desktop.jpg');
+      background-size: 102%, cover;
+
+      @media (min-resolution: 144dpi),
+             (min-resolution: 1.5dppx) {
+        background-image: url('../img/bg-intro-triangle-desktop.svg'),
+                          url('../img/bg-back-desktop@2x.jpg');
+      }
+
     }
-  }
-	
   }
 
   .page-wrapper--inner .intro {
-  
-    &__photo {
-	  padding-top: 100px;
+
+    &__photo{
+			padding-top: 100px;
       padding-bottom: 120px;
+
 		}
-    
+
     &__content {
       padding-top: 105px;
     }
-    
+
   }
-  
+
   .page-wrapper--form .intro {
-    
+
     &__content {
       padding-bottom: 30px;
     }
-    
+
   }
-	
+
 }

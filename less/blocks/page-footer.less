@@ -1,58 +1,59 @@
 .page-footer {
 	//outline: 1px solid green;
-	
+
 	.clearfix;
-	
+
 	display: flex;
 	flex-direction: column;
 	padding-top: 35px;
 	padding-bottom: 25px;
-	
+
 	&__tags {
 		margin-bottom: 36px;
 		font-size: 21px;
 		font-weight: bold;
 		line-height: 26px;
 	}
-	
+
 	&__social {
 		margin-bottom: 35px;
 	}
-	
+
 	&__copyright {
     vertical-align: middle;
     line-height: 40px;
 	}
-	
+
 	&__copyright-link {
 		display: inline-block;
 		vertical-align: middle;
 		width: 40px;
 		font-size: 0;
-    
+
     svg {
       vertical-align: middle;
+			fill: #000000;
     }
-    
+
     &:hover svg {
       fill: @blue;
     }
-    
+
     &:active svg {
       opacity: 0.3;
     }
-    
+
 	}
 }
 
 @media @tablet-widths {
 
 	.page-footer {
-	
+
 		padding-bottom: 35px;
 		flex-direction: row;
 		align-content: center;
-		
+
 		&__tags,
 		&__social,
 		&__copyright {
@@ -60,26 +61,26 @@
 			margin: 0;
 			width: 33.3%;
 		}
-		
+
 		&__copyright {
 			font-size: 14px;
 		}
-		
+
 	}
-	
-	
+
+
 }
 
 @media @desktop-widths {
-	
+
 	.page-footer {
-	
+
 		&__copyright {
 			text-align: right;
 			padding-right: 45px;
 		}
-	
+
 	}
-	
-	
+
+
 }
