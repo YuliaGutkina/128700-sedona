@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
- 
+
 	font-size: @font-size;
 	line-height: 1.5 * @font-size;
 	font-family: 'PT Sans', Arial, sans-serif;
@@ -14,7 +14,7 @@ body {
 
 .page-wrapper {
 	background: #ffffff;
-	.container; 
+	.container;
 }
 
 * {
@@ -27,7 +27,7 @@ img {
   height: auto;
 }
 
-h1, 
+h1,
 h2,
 h3 {
 	font-size: 18px;
@@ -40,12 +40,12 @@ h4 {
 }
 
 @media @tablet-widths {
-  
+
   h1 {
 		font-size: 30px;
     line-height: 36px;
 	}
-  
+
   h2 {
     font-size: 30px;
     line-height: 36px;
@@ -80,38 +80,43 @@ input, textarea {
   outline: none;
   background: @grey;
   text-align: left;
-  color: @black;
+  color: #000000;
   border: 4px solid @grey;
-  
+
   &:hover {
     background: @grey2;
     border: 4px solid @grey2;
   }
-  
+
   &:focus {
     border: 4px solid @grey2;
     background: transparent;
   }
-  
+
 }
 
 textarea {
   font-size: 18px;
 }
 
-input::-webkit-input-placeholder {color:@black;}
-input::-moz-placeholder          {color:@black;}
+input::-webkit-input-placeholder {color:#000000;}
+input::-moz-placeholder          {color:#000000;}
+input:-moz-placeholder          {color:#000000;}
+input:-ms-input-placeholder {color:#000000;}
 input:focus::-webkit-input-placeholder {color: transparent}
 input:focus::-moz-placeholder          {color: transparent}
+input:focus:-moz-placeholder          {color: transparent}
+input:focus:-ms-input-placeholder {color: transparent}
 
-textarea::-webkit-input-placeholder {color:@black;}
-textarea::-moz-placeholder          {color:@black;}
+textarea::-webkit-input-placeholder {color:#000000;}
+textarea::-moz-placeholder          {color:#000000;}
+textarea:-moz-placeholder          {color:#000000;}
+textarea:-ms-input-placeholder {color:#000000;}
 textarea:focus::-webkit-input-placeholder {color: transparent}
 textarea:focus::-moz-placeholder          {color: transparent}
+textarea:focus:-moz-placeholder          {color: transparent}
+textarea:focus:-ms-input-placeholder {color: transparent}
 
-@media @desktop-widths {
-
-}
 
 .tablet-hidden-text {
   @media @tablet-widths {
@@ -129,4 +134,11 @@ textarea:focus::-moz-placeholder          {color: transparent}
 	}
 }
 
-
+@keyframes progress {
+  from {
+    background-color: @blue-down;
+  }
+  to {
+    background-color: @blue-progress;
+  }
+}

@@ -6,7 +6,7 @@
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
-	color: @white;
+	color: #ffffff;
 	text-decoration: none;
 	text-align: center;
 	background: @blue;
@@ -20,11 +20,19 @@
 
   &:active {
     .btn-down;
+  } 
+  
+  &--disabled {
+    background: @grey2;
+    cursor: default;
+    pointer-events: none;
   }
   
+  &--progress {
+    animation: progress 500ms linear infinite alternate;
+  }
   
 }
-
 
 .close-btn,
 .sandwich-btn {
@@ -35,7 +43,7 @@
   background: no-repeat 0 0;  //tmp
   cursor: pointer;
 }
-
+/*
 .close-btn {
   background-image: url('../img/icon-cross.svg'); //tmp
 }
@@ -43,4 +51,4 @@
 .sandwich-btn {
   background-image: url('../img/icon-menu.svg');  //tmp
 }
-
+*/

@@ -1,75 +1,83 @@
 .photo {
 	// outline: 1px solid yellow;
-	
+
 	padding-top: 22px;
-	
+
 	&__img {
 		width: 100%;
 		min-width: 280px;
 		height: 280px;
-		.outline;
 	}
-	
+
 	&__info *{
 		text-align: left;
 	}
-	
+
 	&__info {
 		display: flex;
 		flex-direction: column;
 		padding-top: 10px;
-		padding-bottom: 12px;
+		padding-bottom: 22px;
 	}
-	
+
 	&__title {
 		margin-bottom: 0;
 	}
-	
+
 	&__author {
 		margin-top: 0;
     margin-bottom: 7px;
 		text-transform: none;
 	}
-	
+
 	&__likes {
-		font-size: 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
 	}
-	
+
 	&__like-it {
-		display: inline-block;
 		width: 25px;
 		height: 21px;
 		margin-right: 10px;
-		outline: 1px solid @blue;
+
+		svg {
+			fill: #000000;
+			opacity: 0.3;
+		}
+
 	}
-	
+
 	&__likes-count {
 		font-size: 14px;
+		line-height: 14px;
 		font-weight: bold;
+		align-self: flex-end;
 	}
-	
+
 }
 
 @media @mobile-widths-only {
-  
+
   .photo {
     .border-bottom;
     .mobile-margin;
     .mobile-padding(20px);
   }
-  
+
 }
 
 @media @tablet-widths {
-	
+
 	.photo {
 		padding-top: 0;
 		width: 50%;
-    
+		background: @grey;
+
     &__img {
-      height: 265px;
+      height: 267px;
     }
-		
+
 		&__info {
 			flex-direction: row;
 			justify-content: space-between;
@@ -77,52 +85,68 @@
 			padding: 20px;
       padding-top: 10px;
 		}
-		
+
+		&:nth-child(2n+3) {
+			background: #eaeaea;
+		}
+
 		&__author {
 			margin-bottom: 0;
 		}
-		
+
 		&__likes {
 			min-width: 65px;
 		}
-		
+
+		&__likes-count {
+			align-self: center;
+		}
+
 	}
-	
+
 	.photo--panorama {
 	  width: 100%;
-    
+
     img {
       height: 400px;
     }
-    
+
 	}
-		
+
 }
 
 @media @desktop-widths {
 
 	.photo {
 		position: relative;
+		width: 33.3%;
+		height: 267px;
+
+		&--panorama {
+			width: 100%;
+			height: 400px;
+		}
 
 		&__info {
 			position: absolute;
 			bottom: 0;
 			left: 0;
+      padding-top: 15px;
 			width: 100%;
-			color: @white;
+			color: #ffffff;
 			background: rgba(0, 0, 0, 0.3);
 		}
-		
+
+
+		&__like-it {
+
+			svg {
+				opacity: 1;
+				fill: #ffffff;
+			}
+
+		}
+
 	}
-	
-	.photo {
-		width: 33.3%;
-	}
-  
-	.photo--panorama {
-		width: 100%;
-	}
-	
-	
-	
+
 }

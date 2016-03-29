@@ -1,15 +1,21 @@
 .social-links {
-	//outline: 1px solid yellow;
-	
-	font-size: 0;
-	
+  //outline: 1px solid yellow;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  	
 	&__link {
-		display: inline-block;
+		display: flex;
 		vertical-align: top;
 		width: 46px;
 		height: 48px;
 		margin-right: 6px;
 		background: @blue;
+		
+		svg {
+		  fill: #ffffff;
+		  margin: auto;
+		}
     
     &:hover {
       .btn-hover;
@@ -17,6 +23,11 @@
     
     &:active {
       .btn-down;
+      
+      svg {
+        opacity: 0.3;
+      }
+      
     }
     
 	}
