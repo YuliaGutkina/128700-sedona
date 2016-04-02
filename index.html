@@ -170,7 +170,7 @@
 					<a href="#" class="search__btn  btn">Найти гостиницу</a>
 				</section>
 			</main>
-			<aside class="map"></aside>
+			<aside class="map" id="yandex_map"></aside>
 			<footer class="page-footer">
 				<div class="page-footer__tags">#visitsedona</div>
 				<div class="page-footer__social  social-links">
@@ -218,5 +218,28 @@
 				</div>
 			</footer>
 		</div>
+			<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+			<script type="text/javascript">
+			var myMap;
+			ymaps.ready(init);
+
+			function init () {
+				myMap = new ymaps.Map('yandex_map', {
+				center: [34.865966, -111.763806],
+				controls: ['zoomControl'],
+				zoom: 8
+				});
+				myMap.geoObjects.add(new ymaps.Placemark( [34.865966, -111.763806], {
+					balloonContentHeader: '<strong>Sedona</strong>'
+					, balloonContentBody: 'Because the Grand<br> Canyon sucks'
+					}, {
+						iconLayout: 'default#image',
+						iconImageSize: [27, 27],
+						iconImageHref: 'img/icon-map-marker.svg'
+
+					}));
+				myMap.behaviors.disable('scrollZoom');
+			}
+		</script>
 	</body>
 </html>
