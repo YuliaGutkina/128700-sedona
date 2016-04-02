@@ -8,30 +8,32 @@
 	font-weight: bold;
 	color: #ffffff;
 	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'PT Sans', Arial, sans-serif;
 	text-align: center;
 	background: @blue;
 	border: none;
 	outline: none;
   cursor: pointer;
-  
+
   &:hover {
     .btn-hover;
   }
 
   &:active {
     .btn-down;
-  } 
-  
+  }
+
   &--disabled {
     background: @grey2;
     cursor: default;
     pointer-events: none;
   }
-  
+
   &--progress {
     animation: progress 500ms linear infinite alternate;
   }
-  
+
 }
 
 .close-btn,
