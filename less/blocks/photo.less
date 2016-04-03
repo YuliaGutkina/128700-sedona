@@ -4,9 +4,15 @@
 	padding-top: 22px;
 
 	&__img {
-		width: 100%;
-		min-width: 280px;
+		display: block;
+		width: 280px;
 		height: 280px;
+
+		img {
+			width: 280px;
+			height: 280px;
+		}
+
 	}
 
 	&__info *{
@@ -16,7 +22,7 @@
 	&__info {
 		display: flex;
 		flex-direction: column;
-		padding-top: 10px;
+		padding-top: 16px;
 		padding-bottom: 22px;
 	}
 
@@ -75,7 +81,14 @@
 		background: @grey;
 
     &__img {
-      height: 267px;
+			height: 267px;
+			width: 324px;
+
+			img {
+				height: 267px;
+				width: 324px;
+			}
+
     }
 
 		&__info {
@@ -83,7 +96,7 @@
 			justify-content: space-between;
 			align-items: center;
 			padding: 20px;
-      padding-top: 10px;
+			padding-top: 15px;
 		}
 
 		&:nth-child(2n+3) {
@@ -102,14 +115,20 @@
 			align-self: center;
 		}
 
-	}
+		&--panorama {
+		  width: 100%;
 
-	.photo--panorama {
-	  width: 100%;
+			.photo__img {
+				height: 400px;
+				width: 646px;
+			}
 
-    img {
-      height: 400px;
-    }
+	    img {
+	      height: 400px;
+				width: 646px;
+	    }
+
+		}
 
 	}
 
@@ -120,11 +139,31 @@
 	.photo {
 		position: relative;
 		width: 33.3%;
-		height: 267px;
+
+		&__img {
+			width: 400px;
+			height: 267px;
+
+			img {
+				width: 400px;
+				height: 267px;
+			}
+
+		}
 
 		&--panorama {
 			width: 100%;
-			height: 400px;
+
+			.photo__img {
+				height: 400px;
+				width: 1200px;
+			}
+
+	    img {
+	      height: 400px;
+				width: 1200px;
+	    }
+
 		}
 
 		&__info {
