@@ -117,11 +117,9 @@ module.exports = function(grunt) {
 
     uglify: {
       js: {
-        files: [{
-          expand: true,
-          src: "js/**/*.js",
-          dest: "build/js/scripts.min.js"
-        }]
+        files: {
+          "build/js/scripts.min.js": ["js/scripts.js"]
+        }
       }
     }
 
