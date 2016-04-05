@@ -1,18 +1,18 @@
 .form {
 	//outline: 1px solid red;
-	
+
 	display: flex;
 	flex-direction: column;
   margin-bottom: 35px;
-  
+
   line-height: 26px;
-	
+
 	&__fieldset {
 		margin: 0;
 		padding: 0;
     padding-bottom: 3px;
 		border: none;
-    
+
     legend {
       font-size: 18px;
       font-weight: bold;
@@ -20,86 +20,83 @@
       margin-bottom: 22px;
       color: #000000;
     }
-    
+
     &--contacts {
       padding-bottom: 0;
-      
+
       legend {
         margin-bottom: 21px;
       }
-    
+
     }
-   
+
     &--impressions {
-      padding-bottom: 10px;
+      padding-bottom: 13px;
     }
-    
+
     &--sights {
       padding-bottom: 0;
-      
+
       legend {
         margin-bottom: 18px;
       }
-      
+
     }
-    
+
     &--emotions {
       padding-bottom: 42px;
-      
+
       legend {
         margin-bottom: 18px;
       }
-      
+
     }
-    
-    &:nth-last-child(1),
-    &:nth-last-child(2){
-      border-bottom: none;
-    }
-    
+
+
+
 	}
-  
+
   &__fields-wrap {
     display: flex;
     flex-direction: column;
   }
-	
-  
+
+
   &__text {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-bottom: 21px;
   }
-  
+
   &__text-label {
-    margin-right: 20px;
+    margin-right: 18px;
   }
-  
+
   &__text-input {
     width: 0;
     flex-grow: 1;
   }
-  
-  
+
+
   &__contacts-item {
     display: flex;
     flex-direction: column;
     position: relative;
     margin-bottom: 10px;
     padding-bottom: 30px;
-    
+
     &:last-child {
       margin-bottom: 0;
     }
-    
+
   }
-  
+
   &__overflow {
     display: flex;
     flex-direction: row;
   }
-  
+
   &__error-msg {
     position: absolute;
     bottom: 0;
@@ -108,39 +105,51 @@
     line-height: 26px;
     color: @error;
   }
-  
+
   &__contacts-input {
     width: 0;
     flex-grow: 1;
+
+		&--desktop {
+			display: none;
+		}
+
   }
-  
+
   &__contacts-icon {
+		display: flex;
     width: 57px;
     background: #e6e6e6;
+
+		svg {
+			margin: auto;
+			fill: #000000;
+		}
+
   }
-  
+
   &__contacts-label {
     margin-bottom: 8px;
     padding-left: 20px;
     text-align: left;
   }
-    
+
   &__radio-input,
   &__checkbox-input {
     display: none;
   }
-  
+
   &__radio-label,
   &__checkbox-label {
     position: relative;
     line-height: 56px;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
     padding-left: 77px;
     text-align: left;
     font-weight: bold;
     text-transform: none;
     font-size: 18px;
-    
+
     &::before {
       content: '';
       position: absolute;
@@ -150,33 +159,33 @@
       height: 56px;
       background: @grey;
     }
-    
+
     &::after {
       content: '';
       position: absolute;
       display: none;
     }
-    
+
     &:hover::before {
       background: @grey2;
     }
-    
+
     &:active::before {
       background: @grey3;
     }
-    
+
     &:active::after {
       opacity: 0.3;
     }
-    
+
   }
-  
+
   &__radio-label {
-    
+
     &::before {
       border-radius: 50%;
     }
-    
+
     &::after {
       top: 17px;
       left: 17px;
@@ -185,126 +194,132 @@
       background: #333333;
       border-radius: 50%;
     }
-    
+
   }
- 
+
   &__checkbox-label {
-  
+
     margin-bottom: 24px;
-  
+
     &::before {
       border-radius: 5px;
     }
-    
+
     &::after {
       top: 0;
       left: 0;
       width: 20px;
       height: 10px;
-      border: 3px solid #333333;
+      border: 4px solid #333333;
       border-top: none;
       border-right: none;
       transform: rotate(-44deg) translateY(25px);
     }
-    
+
   }
-  
+
   &__radio-input:checked + &__radio-label::after,
   &__checkbox-input:checked + &__checkbox-label::after {
     display: block;
   }
-   
+
   &__textarea {
     width: 100%;
     height: 160px;
     resize: vertical;
   }
-  
+
   &__comment {
     display: none;
   }
-    
+
 }
 
 
 @media @mobile-widths-only {
-	
+
 	.form {
-	
+
 		&__fieldset {
 			.mobile-margin;
 			.mobile-padding(20px);
       .border-bottom;
+
+			&--submit,
+	    &--emotions {
+	      border-bottom: none;
+	    }
+
 		}
-		
+
 	}
-		
+
 }
 
 @media @tablet-widths {
 
 	.form {
-		
+
 		flex-direction: row;
 		flex-wrap: wrap;
-		margin-bottom: 55px;
+		margin-bottom: 60px;
 		padding-left: 60px;
 		padding-right: 60px;
 
-	
+
 		&__fieldset {
-    
+
 			width: 50%;
 			margin: 0;
 			border: none;
-      
+
       legend {
         margin-bottom: 56px;
         text-align: left;
         font-size: 21px;
       }
-      
+
       &--impressions {
         order: -1;
         padding: 0;
-        
+
         legend {
           margin-bottom: 58px;
         }
-        
-      } 
-      
+
+      }
+
       &--user-name {
         padding-left: 57px;
         .border-left;
       }
-      
+
       &--contacts {
         margin-top: 70px;
         margin-bottom: 25px;
-        
+
         legend {
           margin-bottom: 22px;
         }
       }
-      
+
       &--sights {
         margin-bottom: 46px;
-        
+
         legend {
           margin-bottom: 42px;
         }
-        
+
       }
-      
+
       &--emotions {
         padding-bottom: 52px;
       }
-      
+
       &--fullsize {
         width: 100%;
         border-top: 1px solid #dbdbdb;
-        
+
         legend {
           width: 400px;
           .center;
@@ -313,147 +328,150 @@
           padding-right: 55px;
           text-align: center;
         }
-      
+
       }
-            
+
 		}
-  
-       
+
+
     &__fields-wrap--sights {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
     }
-    
+
     &__checkbox-label {
       width: 230px;
       margin-left: 30px;
-        
+
       &:nth-of-type(1),
       &:nth-of-type(3){
         order: -1;
         margin-bottom: 31px;
       }
-      
+
     }
-    
+
     &__text {
       &:last-of-type {
         margin: 0;
       }
     }
-    
+
     &__radio-label {
       margin-bottom: 22px;
-      
+
         &:last-of-type {
           margin: 0;
         }
-        
+
     }
-    
+
     &__contacts-item {
       padding-bottom: 0;
       margin-bottom: 25px;
-      
+
       &:last-child {
         margin-bottom: 25px;
       }
-      
+
     }
-    
+
     &__error-msg {
       top: 0;
       right: 0;
       height: 26px;
       text-align: right;
     }
-    
+
     &__comment {
       display: block;
       margin-left: auto;
       align-self: center;
     }
-    
+
 	}
 
-	
+
 }
 
 
 @media @desktop-widths {
-	
+
 	.form {
-		
+
 		flex-direction: row;
 		flex-wrap: wrap;
 		margin-bottom: 65px;
 		padding-left: 120px;
 		padding-right: 120px;
-    
+
     &__fields-wrap--contacts,
     &__fields-wrap--sights {
       flex-direction: row;
       justify-content: space-between;
       align-items: flex-start;
     }
-    
+
     &__fieldset {
-      
+
       &--impressions,
       &--user-name {
         padding-left: 80px;
       }
-      
+
       &--contacts {
-        
+
+				margin-top: 65px;
+				margin-bottom: 30px;
+
         legend {
           margin-bottom: 45px;
         }
-        
+
       }
-      
+
       &--sights {
         margin-bottom: 35px;
       }
-      
+
     }
-    
+
     &__fields-wrap--impressions {
       margin-left: -80px;
     }
-    
+
     &__checkbox-label {
       width: auto;
       margin: 0;
-    }    
-     
+    }
+
     &__contacts-item  {
       display: flex;
       flex-direction: row;
-      align-items: center;
+      align-items: baseline;
       width: 50%;
       padding-top: 30px;
-      
+
       &:first-child {
         padding-right: 80px;
       }
     }
-    
+
     &__error-msg {
       text-align: left;
       left: 110px;
     }
-    
+
     &__contacts-label {
       margin-right: 20px;
       padding-left: 0;
     }
-    
+
     &__overflow {
       flex-grow: 1;
     }
-		
+
 	}
-	
+
 }

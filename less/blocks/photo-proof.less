@@ -1,6 +1,6 @@
 .photo-proof {
 	//outline: 1px solid red;
-	
+
 	display: flex;
 	flex-direction: column;
 
@@ -10,98 +10,115 @@
     padding-top: 40px;
     padding-bottom: 25px;
   }
-	
+
 	&__photo {
 		background: no-repeat 50% 50%;
 		background-size: cover;
 	}
-	
+
 	&__photo--authentic {
 		background-image: url('../img/photo-city.jpg');
-    
+
     @media (min-resolution: 1.5dppx) {
       background-image: url('../img/photo-city@2x.jpg');
     }
-    
+
 	}
-	
+
 	&__photo--bridge {
 		background-image: url('../img/photo-bridge.jpg');
-    
+
     @media (min-resolution: 1.5dppx) {
       background-image: url('../img/photo-bridge@2x.jpg');
     }
-    
+
 	}
 }
 
 @media @mobile-widths-only {
 
 	.photo-proof {
-      
+
     .mobile-margin;
-    
+
     .exclusive {
       .mobile-padding;
       border: none;
     }
-		
+
 		&__content {
-			
+
 		}
-		
+
 		&__photo {
 			height: 260px;
 			width: 100%;
 		}
-    
+
     &--first {
-      background-image: url('../img/bg-triangle.svg');
-      background-position: 0 0;
-      background-repeat: no-repeat;
-      background-size: 100%;
+
+			.exclusive {
+				padding-top: 77px;
+				margin-top: -37px;
+	      background-image: url('../img/bg-triangle.svg');
+	      background-position: 50% 0;
+	      background-repeat: no-repeat;
+	      background-size: 768px;
+			}
+
     }
-    
+
 	}
-	
+
 }
 
 @media @tablet-widths {
 
 	.photo-proof {
 		flex-direction: row;
-    
+
     .exclusive {
       padding-top: 45px;
       padding-bottom: 30px;
+			padding-left: 45px;
+			padding-right: 45px;
     }
-		
+
 		&__content {
 			width: 33.3%;
 		}
-		
+
 		&__content--right {
 			order: 1;
 		}
-		
+
 		&__photo {
 			min-height: 250px;
 			flex-grow: 1;
 		}
-		
+
 	}
-	
-	
-	
+
+
+
 }
 
 @media @desktop-widths {
 
   .photo-proof {
+
     .exclusive {
       padding-top: 50px;
-      padding-bottom: 45px;  
+      padding-bottom: 45px;
+			padding-left: 90px;
+			padding-right: 90px;
     }
+
+		&--first .exclusive {
+			padding-left: 70px;
+			padding-right: 70px;
+		}
+
   }
 
 }

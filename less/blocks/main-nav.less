@@ -1,56 +1,61 @@
 .main-nav {
 	//outline: 1px solid yellow;
-	
+
 	position: relative;
 	min-height: 55px;
-	
+
 	&__list {
 		display: flex;
 		flex-direction: column;
 		.list-style-reset;
 	}
-		
+
 	&__item {
 		font-weight: bold;
 		min-height: 56px;
 	}
-	
+
 	&__item a {
 		display: block;
 		padding: 16px;
 		text-align: center;
 	}
-	
+
 	&__logo-wrapper {
 		position: relative;
 		height: 56px;
 		text-align: center;
 	}
-	
+
 	&__logo{
 		position: absolute;
 		top: 0;
 		left: 50%;
 		margin-left: -51px;
 	}
- 
+
 }
 
 @media @mobile-widths-only {
 
 	.main-nav {
-	
+
 		&__list {
 			.mobile-margin;
+
+			&--closed {
+				display: none;
+			}
+
 		}
-		
+
 		&__item {
 			color: #ffffff;
 			background: @blue;
 			font-size: 18px;
 			border-bottom: 1px solid #678fa8;
 			border-top: 1px solid #9ac2db;
-      
+
       &:hover {
         .btn-hover;
       }
@@ -58,100 +63,109 @@
       &:active {
         .btn-down;
       }
-      
+
       &:first-child {
         border-top: none;
       }
-      
+
       &:last-child {
         border-bottom: none;
         min-height: 55px;
         box-shadow: inset 0 -5px 5px -5px rgba(0, 0, 0, 0.2);
       }
-      
+
       &--active {
         pointer-events: none;
       }
-      
+
 		}
-    
-    
+
+
     &__close,
     &__sandwich {
       position: absolute;
+		  display: block;
+		  width: 23px;
+		  height: 23px;
+		  cursor: pointer;
+
+			&--hide {
+				display: none;
+			}
+
     }
-    
+
     &__close {
       top: 17px;
       right: 0;
-      
+
       svg {
         fill: #ffffff;
       }
     }
-    
+
     &__sandwich {
       bottom: 18px;
       right: 0;
-      
+
       svg {
         fill: @blue;
       }
-      
+
     }
-		
+
 	}
-	
+
 }
 
 
 @media @tablet-widths {
 
 	.main-nav {
-	
+
 		&__list {
 			flex-direction: row;
 			justify-content: space-between;
 			flex-wrap: wrap;
 		}
-		
+
 		&__item {
 			width: 20%;
-      
+
       &:nth-child(4n+2) {
         margin-right: 20%;
       }
-      
+
       a {
         padding: 17px;
-        
+
         &:hover {
           color: @blue;
         }
-        
+
         &:active {
           opacity: 0.3;
         }
-        
+
       }
-      
+
       &--active a{
         color: @brown;
-        
+
         &:hover {
           color: @brown2;
         }
-        
+
         &:active {
           opacity: 0.3;
         }
-        
+
       }
-      
+
 		}
-		
-		
-		
+
+
+
 		&__logo-wrapper {
 			height: 0;
 			width: 100%;
@@ -159,27 +173,26 @@
 			top: 0;
 			left: 0;
 		}
-    
+
     &__close,
     &__sandwich {
     display: none;
   }
-	
+
 	}
 }
 
 @media @desktop-widths {
   .main-nav {
-  
+
     &__logo {
       margin-left: -94px;
-      
+
       img{
          width: 188px;
          height: 96px;
       }
-        
+
     }
   }
 }
-

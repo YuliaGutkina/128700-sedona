@@ -7,8 +7,9 @@
 		padding-top: 90px;
 		padding-bottom: 85px;
     line-height: 0;
+    background: #ddebf4;
     background: url('../img/bg-intro-triangle-mobile.svg') no-repeat 50% 100%,
-				        url('../img/bg-back-mobile.jpg') no-repeat 50% 50%;
+				        #ddebf4 url('../img/bg-back-mobile.jpg') no-repeat 50% 50%;
 	  background-size: 104%, 768px;
 
     @media (min-resolution: 144dpi),
@@ -89,12 +90,18 @@
     .border-bottom;
 
     &__content {
-      .mobile-padding(20px);
+      .mobile-padding(25px);
     }
 
   }
 
+  .page-wrapper--form  .intro {
 
+    &__content {
+      .mobile-padding(20px);
+    }
+
+  }
 
 }
 
@@ -181,11 +188,12 @@
     &__photo{
 			padding-top: 100px;
       padding-bottom: 120px;
-
+      background-size: 102%, cover;
 		}
 
     &__content {
-      padding-top: 105px;
+      padding-top: 107px;
+      padding-bottom: 57px;
     }
 
   }
@@ -193,7 +201,7 @@
   .page-wrapper--form .intro {
 
     &__content {
-      padding-bottom: 30px;
+      padding-bottom: 28px;
     }
 
   }
