@@ -1,21 +1,21 @@
-var mainNav = document.querySelector(".main-nav__list");
+var mainNav = document.querySelector('.main-nav__list');
 var closeBtn =
-document.querySelector(".main-nav__close");
-var sandwichBtn = document.querySelector(".main-nav__sandwich");
+document.querySelector('.main-nav__close');
+var sandwichBtn = document.querySelector('.main-nav__sandwich');
 
-mainNav.classList.add("main-nav__list--closed");
-sandwichBtn.classList.remove("main-nav__sandwich--hide");
+mainNav.classList.add('main-nav__list--closed');
+sandwichBtn.classList.remove('main-nav__sandwich--hide');
 
-sandwichBtn.addEventListener("click", function(event){
-  mainNav.classList.remove("main-nav__list--closed");
-  closeBtn.classList.remove("main-nav__close--hide");
-  sandwichBtn.classList.add("main-nav__sandwich--hide");
+sandwichBtn.addEventListener('click', function(event){
+  mainNav.classList.remove('main-nav__list--closed');
+  closeBtn.classList.remove('main-nav__close--hide');
+  sandwichBtn.classList.add('main-nav__sandwich--hide');
 });
 
-closeBtn.addEventListener("click", function(event){
-  mainNav.classList.add("main-nav__list--closed");
-  closeBtn.classList.add("main-nav__close--hide");
-  sandwichBtn.classList.remove("main-nav__sandwich--hide");
+closeBtn.addEventListener('click', function(event){
+  mainNav.classList.add('main-nav__list--closed');
+  closeBtn.classList.add('main-nav__close--hide');
+  sandwichBtn.classList.remove('main-nav__sandwich--hide');
 });
 
 var myMap;
