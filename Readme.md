@@ -1,7 +1,7 @@
 # Project «Sedona» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Student: [Yulia Gutkina](https://up.htmlacademy.ru/adaptive/6/user/128700).
-* Наставник: [Evgeniy Karpov](https://htmlacademy.ru/profile/id70583).
+* Tutor: [Evgeniy Karpov](https://htmlacademy.ru/profile/id70583).
 
 ---
 
